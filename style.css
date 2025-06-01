@@ -1,0 +1,86 @@
+* {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+section {
+    display: grid;
+    grid-template-areas:
+    'header header header header header'
+    'aside article article article article'
+    'footer footer footer footer footer';
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 275px 600px;
+}
+
+header {
+    border: 1px solid white;
+    grid-area: header;
+    height: 12vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+aside {
+    border: 1px solid white;
+    grid-area: aside;
+    height: 75vh;
+    display: grid;
+    align-items: start;
+    justify-content: space-around;
+}
+
+aside a {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+article {
+    border: 1px solid white;
+    display: grid;
+    font-style: italic;
+    padding: 30px;
+    grid-area: article;
+    text-align: justify;
+    justify-items: center;
+}
+
+article p {
+    font-size: 20px;
+}
+
+article img {
+    width: 200px;
+    height: 200px;
+    justify-items: center;
+}
+
+#rav {
+    width: 500px;
+}
+
+#github {
+    width: 400px;
+}
+
+#ppcss {
+    width: 400px;
+}
+
+footer {
+    border: 1px solid white;
+    grid-area: footer;
+    height: 5vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
